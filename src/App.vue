@@ -1,4 +1,5 @@
 <script>
+import AppFooter from './components/Appfooter.vue';
 import AppHeader from './components/AppHeader.vue';
 import AppMain from './components/AppMain.vue';
 
@@ -10,6 +11,7 @@ export default {
   components: {
     AppHeader,
     AppMain,
+    AppFooter
   },
   methods: {
     IncrementCount(){
@@ -26,8 +28,11 @@ export default {
   <AppHeader />
 
   <!-- Main content component -->
-  <MainApp />
+  <AppMain />
   
+  <!-- App Footer component -->
+  <AppFooter />
+
 </div>
 </template>
 
