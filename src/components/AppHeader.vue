@@ -1,29 +1,66 @@
 <script>
-// my-component.js
-export default {
-  data() {
-    return {
-      message: "La mia prima app con Vite!"
-    }
-  },
-}
+
 </script>
 
 <template>
 <header>
-  <h1>
-    {{ message }}
-  </h1>
+  <div class="container">
+    <img src="../../img/favicon.ico" alt="logo" class="logo">
+    <nav class="navbar">
+      <ul>
+        <li><a href="#">Characters</a></li>
+        <li><a href="#">Comics</a></li>
+        <li><a href="#">Movies</a></li>
+        <li><a href="#">TV</a></li>
+        <li><a href="#">Games</a></li>
+        <li><a href="#">Collectibles</a></li>
+        <li><a href="#">Videos</a></li>
+        <li><a href="#">Fans</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Shop</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
 </template>
 
-<style scoped>
-header{
-  background-color: greenyellow ;
+<style lang="scss" scope>
+
+header {
   text-align: center;
-}
-h1{
-  color: red;
+  padding: 20px 0;
+
+  .container{
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    margin: auto;
+  }
+  .logo {
+    width: 100px;
+  }
+
+  .navbar {
+    padding: 15px 0;
+
+    ul {
+      list-style-type: none;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+
+      li {
+        
+        a {
+          text-decoration: none;
+          font-size: 16px;
+          &:active {
+            border-bottom: 20px blue;
+          }
+        }
+      }
+    }
+  }
 }
 </style>
 npm,

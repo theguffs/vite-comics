@@ -1,6 +1,5 @@
 <script>
 import AppHeader from './components/AppHeader.vue';
-import AppHeader from './components/AppHeader.vue';
 
 export default {
   data() {
@@ -31,7 +30,7 @@ export default {
 </div>
 </template>
 
-<style scoped>
-
+<style lang="scss" scope>
+ 
 </style>
 npm,
