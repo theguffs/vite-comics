@@ -1,14 +1,15 @@
 <script>
 import AppHeader from './components/AppHeader.vue';
+import AppMain from './components/AppMain.vue';
 
 export default {
   data() {
     return {
-      count: 0
     }
   },
   components: {
-    AppHeader
+    AppHeader,
+    AppMain,
   },
   methods: {
     IncrementCount(){
@@ -21,11 +22,11 @@ export default {
 <template>
 <div>
 
-  <AppHeader/>
+  <!-- Header component -->
+  <AppHeader />
 
-  <button @click="IncrementCount()">
-
-  </button>
+  <!-- Main content component -->
+  <MainApp />
   
 </div>
 </template>

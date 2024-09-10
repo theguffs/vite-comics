@@ -1,29 +1,28 @@
-<script>
-// my-component.js
-export default {
-  data() {
-    return {
-      message: "La mia prima app con Vite!"
-    }
-  },
-}
-</script>
-
 <template>
-<header>
-  <h1>
-    {{ message }}
-  </h1>
-</header>
+  <main>
+    <div class="content">
+      <h1>--&gt; Content goes here &lt;--</h1>
+    </div>
+  </main>
 </template>
 
-<style lang="scss" scope>
-header{
-  background-color: greenyellow ;
-  text-align: center;
-}
-h1{
-  color: red;
+<script>
+
+</script>
+
+<style lang="scss" scoped>
+main {
+  padding: 40px 0;
+  background-color: black;
+
+  .content {
+    max-width: 1000px;
+    margin: auto;
+
+    h1 {
+      font-size: 32px;
+      color: white;
+    }
+  }
 }
 </style>
-npm,
